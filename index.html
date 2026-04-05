@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 API Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f7fa;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .section {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      background: #4a90e2;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #357abd;
+
+    }
+    #content {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    canvas {
+      border: 1px solid #ccc;
+      display: block;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+
+    input {
+      padding: 6px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section">
+    <h2>1. History API</h2>
+    <h3>Навигация по страницам</h3>
+    <button id="nextPage">Следующая страница</button>
+    <button id="prevPage">Предыдущая страница</button>
+    <h3>История браузера</h3>
+    <button id="back">Назад</button>
+    <button id="forward">Вперед</button>
+    <p id="content">Текущая страница: 0</p>
+  </div>
+  <hr>
+
+  <div class="section">
+    <h2>2. Canvas Анимация</h2>
+    <canvas id="canvas" width="400" height="200"></canvas>
+  </div>
+
+  <hr>
+  <div class="section">
+    <h2>3. Web Worker</h2>
+    <input type="number" id="number" placeholder="Введите число">
+    <button id="startWorker">Запустить вычисление</button>
+    <p id="result"></p>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
